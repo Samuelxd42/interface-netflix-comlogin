@@ -1,5 +1,7 @@
 <?php
 
+setcookie("loginToken", $user); unset($_COOKIE['loginToken']);
+
 require __DIR__ . '/vendor/autoload.php';
 
 use Kreait\Firebase\Factory;
