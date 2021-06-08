@@ -1,0 +1,141 @@
+
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--preto);
+    color: whitesmoke;
+    font-family: 'Arial', Times, serif;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    margin-left: 5px;
+    font-family: "Arial Black", Gadget, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 30px;
+    height: auto;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* filme principal */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/seriePricipal.jpg') ;
+
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px;
+
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 90px;
+}
+
+.titulo {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btn {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 4px;
+    margin-right: 15px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--preto);
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+
+.item {
+    height: 350px;
+}
+
+h2 {
+    padding: 10px;
+    margin-left: 20px;
+}
+
+footer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    margin-top: 40px;
+}
+
+.desco {
+    direction: none;
+    text-decoration:none; 
+    color: var(--vermelho);
+}
+
+.fab {
+    color: var(--vermelho);
+    padding: 5px;
+}
+
+
